@@ -33,16 +33,16 @@ A confusion matrix was used to visualize the performance of the model in predict
 
 |             | Predicted AI Generated | Predicted Human Content |
 |-------------|------------------------|-------------------------|
-| Actual AI Generated     | 15715                  | 927                     |
-| Actual Human Content    | 2380                   | 10978                   |
+| Actual AI Generated     | 15811                  | 1023                    |
+| Actual Human Content    | 2082                   | 11084                   |
 
 Classification Report
 A classification report was used to provide details on performance metrics of the model. This includes precision, recall, and F1-score for AI Generated and Human Content. The resulting classification report can be seen below:
 
 | Class          | Precision | Recall | F1-Score |
 |----------------|-----------|--------|----------|
-| AI Generated   | 0.87      | 0.94   | 0.90     |
-| Human Content  | 0.92      | 0.82   | 0.87     |
+| AI Generated   | 0.88      | 0.94   | 0.91     |
+| Human Content  | 0.92      | 0.84   | 0.88     |
 
 ROC-AUC Score:
 The ROC-AUC score was used to quantify the model's ability to distinguish content across thresholds. This score can be seen below:
@@ -51,7 +51,7 @@ ROC-AUC Score: 0.9621
 
 The overall accuracy of the model, as evaluated against the testing subset can be seen below:
 
-Test Accuracy: 0.8898
+Test Accuracy: 0.8965
 
 ## Using the Model
 To use the model to make predictions on new text, create a .txt file with the text you would like to classify. Then, in the terminal, run `python ContentDetector.py [path to txt file]`. The predicted output will then be printed to the terminal. 
